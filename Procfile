@@ -1,2 +1,1 @@
-
-web: gunicorn 'carzone.wsgi' --log-file - 
+web: python manage.py migrate && gunicorn 'carzone.wsgi'
